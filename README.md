@@ -1,112 +1,19 @@
 Mikrotik/Redes
 
-*Principais temas abordados:*
+Repositório dedicado aos meus estudos e laboratórios práticos voltados para Linux, redes, virtualização, infraestrutura e ambientes corporativos.
 
-Linux Administration
+A ideia deste projeto é documentar minha evolução técnica através de testes reais, troubleshooting, configurações e pequenos cenários inspirados em ambientes profissionais.
 
-Estrutura do sistema Linux
+*Objetivos do repositório:*
 
-Troubleshooting
+Documentar laboratórios práticos
 
-Redes e Infraestrutura
+Consolidar conhecimentos em Linux e redes
 
-Firewall
+Criar material de consulta para estudos futuros
 
-Comunicação entre redes
+Simular cenários corporativos
 
-MikroTik
+Desenvolver raciocínio de troubleshooting
 
----------------------------------------------------------//------------------------------------------------------------------------
-
-*Laboratórios envolvendo:*
-
-Bridge
-
-VLAN
-
-DHCP Client/Server
-Firewall
-
-NAT
-
-Roteamento
-
-Integração com Proxmox
-
-Virtualização
-
----------------------------------------------------------//------------------------------------------------------------------------
-
-*Ambientes utilizando:*
-
-Proxmox
-
-VirtualBox
-
-Máquinas virtuais Linux
-
-Simulações de redes corporativas
-
-Estudos atuais
-
----------------------------------------------------------//------------------------------------------------------------------------
-
-*Atualmente os estudos estão mais focados em:*
-
-Linux
-
-Redes
-
-MikroTik
-
-Virtualização
-
-Infraestrutura de Data Center
-
----------------------------------------------------------//------------------------------------------------------------------------
-
-*Objetivo profissional:*
-
-Meu foco é evoluir gradualmente para áreas como:
-
-Infraestrutura
-
-Data Center
-
-Redes
-
-Virtualização
-
-Sistemas Linux
-
-Monitoramento
-
-Ambientes corporativos
-
----------------------------------------------------------//------------------------------------------------------------------------
-
-Observações:
-
-Este repositório é um ambiente de aprendizado contínuo.
-
-Muitos laboratórios representam:
-
-testes
-
-validações
-
-erros reais
-
-troubleshooting
-
-mudanças de arquitetura
-
-comportamento de sistemas em cenários práticos
-
-A documentação é atualizada conforme os estudos evoluem.
-
----------------------------------------------------------//------------------------------------------------------------------------
-
-Autor
-
-Ewerton Souza
+Evoluir conhecimentos em infraestrutura
