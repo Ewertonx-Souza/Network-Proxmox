@@ -96,7 +96,7 @@ Foi acrescido endereço e mantido os endereços fornecido pelo DHCP, pois não f
 
 * sudo nmcli connection modify NOME_DA_INTERFACE ipv4.ignore-auto-dns yes
 
-![loopback](../Imagens/dnsmasq/onlu_loopback.png) 
+![loopback](../Imagens/dnsmasq/only_loopback.png) 
 
 Como o comando já tinha sido usado o comando "sudo nmcli connection modify ens18 ipv4.dns "127.0.0.1"", certamente o ip de loopback seria persistente. Utilizando o "cat" os IP automáticos
 ainda estavam registrados no arquivos, porém ao rosar o "sudo systemctl restart NetworkManager" e executado o "cat /etc/resolv.conf de novo, apenas o IP de loopback se encontra registrado. 
