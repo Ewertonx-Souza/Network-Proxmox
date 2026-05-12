@@ -25,12 +25,12 @@ que ao instalar um serviço ele entra em execução automaticamente. é necessá
 * sudo systenctl status dnsmasq
 * sudo systemctl enable dnsmasq
 
-[status](../Imagens/dnsmasq/dnsmasq_status.png) 
+![status](../Imagens/dnsmasq/dnsmasq_status.png) 
 
 * sudo systectl start dnsmasq
 * sudo systenctl status dnsmasq
 
-[start](../Imagens/dnsmasq/dnsmasq_start.png) 
+![start](../Imagens/dnsmasq/dnsmasq_start.png) 
 
  2. configuração dnsmasq 
  
