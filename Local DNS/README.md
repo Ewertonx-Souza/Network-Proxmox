@@ -198,11 +198,11 @@ Após a liberação do tráfego DNS, testes no Windows e Linux tiveram repsostas
 
 Windows:
 
-![firewall](../Imagens/nslookup_success_win.png)
+![firewall](../Imagens/dnsmasq/nslookup_success_win.png)
 
 Linux:
 
-![firewall](../Imagens/nslookup_success_linux.png)
+![firewall](../Imagens/dnsmasq/nslookup_success_linux.png)
 
 Sendo assim, serviço DNS fornecido pelo programa dnsmasq funcionando corretamente e o lab agora possui um DNS interno. 
 
