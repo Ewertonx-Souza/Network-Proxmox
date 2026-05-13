@@ -131,13 +131,80 @@ Com a configuração do dnsmasq concluída e a do NetworkManager também, é imp
 --Teste de nome interno 
 2. Validando de fora (Pc e outras VM's)
 
-Dentro do Rocky Linux usaremos a ferramenta "dig". Ela serve para realizar consultas a servidores de nomes DNS e exibir informações detalhadas sobre os registros de um domínio.
+Dentro do Rocky Linux usaremos a ferramenta "dig". Ela serve para realizar consultas a servidores DNS e exibir informações detalhadas sobre os registros de um domínio.
 
 Teste de internet (Forwarding):
 
 * dig google.com
 
 ![dig](../Imagens/dnsmasq/dig_google.png) 
+
+Na imagem é possível visualizar que:
+
+Got answer - Status: NOERROR - Sinalização de que o domínio foi localizado.
+Answer section - google.com 142.250.78.174 - Associação do domínio escolhido ao IP questionado. 
+Server - 127.0.0.1#53 - Servidor que respondeu a solicitação
+
+Ou seja, o comando valida:
+
+resolv.conf - Direcionando corretamente 
+dnsmasq local - Escutando na porta de loopback configurada 
+encaminhamento externo - dnsmasq faz o encaminhamento para o DNS 8.8.8.8
+conectividade internet - Acesso a internet funcional. 
+
+Teste de comunicação direta:
+
+![dig127](../Imagens/dnsmasq/dig_127.png)
+
+Agora incluindo o IP de loopback antes do domínio, o comando dig irá ignorar o /etc/resolv.conf, que contém o IP do servidor DNS e vai direcionar a requisição direto para o servidor DNS.
+
+Esse teste valida:
+
+dnsmasq escutando no loopback
+porta 53 funcionando localmente
+
+Teste de nome interno:
+
+![dig127](../Imagens/dnsmasq/local_name.png)
+
+Isso valida:
+
+domínio local
+integração com /etc/hosts
+resolução local sem internet
+
+Validando de fora (Pc e outras VM's):
+
+No windows, foi feito a tentativa de requisição DNS utilizando o cmd.
+
+![nslookup](../Imagens/dnsmasq/nslookup_failed_win.png)
+
+Identificado que o nslookup, ferramenta que segue a mesma linha de raciocínio que o dig, não conseguiu comunicação com com o serviço. 
+
+Mesmo resultado testando no Ubuntu, VM que também está hospedada no proxmox, mas fora da Vlan10.
+
+![nslookup2](../Imagens/dnsmasq/nslookup_failed.png)
+
+Falha na comunicação também. 
+
+Diante desse cenário, a possível causa dessa falta de comunicação, visto que internamente o serviço está funcional, é o bloqueio que o firewall do Rocky Linux estava fazendo. Então, foi feita
+a liberação do tráfego DNS no firewall:
+
+* sudo firewall-cmd --add-service=dns --permanent
+
+![firewall](../Imagens/dnsmasq/allow_firewall.png)
+
+Após a liberação do tráfego DNS, testes no Windows e Linux tiveram repsostas corretamente.
+
+Windows:
+
+![firewall](../Imagens/nslookup_success_win.png)
+
+Linux:
+
+![firewall](../Imagens/nslookup_success_linux.png)
+
+Sendo assim, serviço DNS fornecido pelo programa dnsmasq funcionando corretamente e o lab agora possui um DNS interno. 
 
 
 
