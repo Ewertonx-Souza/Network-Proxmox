@@ -7,13 +7,21 @@ Este projeto tem como objetivo implementar e validar uma comunicação Layer 2 (
 A topologia foi construída utilizando:
 
 -Um MikroTik físico com RouterOS 6.49.20.
+
 -Um MikroTik virtual com RouterOS 7.16, hospedado no Proxmox VE.
+
 -OSPF como protocolo de roteamento dinâmico.
+
 -LDP para distribuição de labels MPLS.
+
 -MPLS para encaminhamento de pacotes identificados por labels.
+
 -VPLS para estabelecer um pseudowire Ethernet entre os roteadores.
+
 -Bridges Linux no Proxmox para interligação das máquinas virtuais.
+
 -VLAN 100 para conectar o computador físico ao domínio Layer 2 do VPLS.
+
 -Uma máquina virtual Linux para realizar os testes de conectividade.
 
 O objetivo final é permitir que um computador físico e uma máquina virtual Linux, conectados a equipamentos diferentes, consigam se comunicar como se estivessem conectados ao mesmo segmento Ethernet.
