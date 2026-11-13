@@ -204,6 +204,6 @@ Mikrotik Virtual:
 
 MAC da VM:
 
-![mac](../Imagens/L2tunnel/ether2_dhcp.png) 
+![mac](../Imagens/L2tunnel/dhcp_mac.png) 
 
 
