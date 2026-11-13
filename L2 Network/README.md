@@ -70,3 +70,6 @@ O objetivo final é permitir que um computador físico e uma máquina virtual Li
                          |
                    VM Linux 100
                   10.10.100.1/24
+
+
+kkk
