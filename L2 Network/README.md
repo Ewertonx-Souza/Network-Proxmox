@@ -182,4 +182,14 @@ Mikrotik virtual:
 
 ![vmbr0](../Imagens/L2tunnel/ether1_mkv.png) 
 
+3.2. vmbr1 — Rede interna das máquinas virtuais
+
+A vmbr1 foi utilizada como bridge interna para conectar as máquinas virtuais à rede original de laboratório.
+
+O MikroTik virtual possui uma interface conectada a essa bridge, responsável pela rede DHCP das VMs.
+
+Essa rede foi mantida separada do circuito VPLS para evitar misturar o tráfego original das máquinas virtuais com o tráfego do laboratório MPLS.
+
+
+
 
