@@ -142,3 +142,33 @@ Interface: Nova interface
 Endereço: 10.10.100.1/24
 
 Finalidade: Teste VPLS
+
+Observação: os endereços de transporte e loopback acima correspondem à topologia utilizada no laboratório. Os endereços de acesso devem ser conferidos nas configurações finais antes de publicar a documentação.
+
+3. Preparação do ambiente Proxmox
+
+Antes de configurar os protocolos de rede, foi necessário preparar a infraestrutura virtual para permitir a comunicação entre os roteadores e as máquinas virtuais.
+
+Foram utilizadas três bridges Linux no Proxmox: vmbr0, vmbr1 e vmbr2.
+
+3.1. vmbr0 — Rede de transporte
+
+A vmbr0 é responsável pela comunicação entre o MikroTik virtual e o MikroTik físico.
+
+Ela está associada à interface física de rede do servidor Proxmox, identificada como nic0.
+
+Configuração lógica:
+
+Parâmetro            Valor
+--------------------------------------
+Nome                 vmbr0
+Tipo                 Linux Bridge
+Bridge port          nic0
+Endereço Proxmox     192.168.88.200/24
+Gateway              192.168.88.1
+
+A interface ether1 do MikroTik virtual foi conectada à vmbr0.
+
+Essa rede transporta o tráfego de controle e os pacotes MPLS entre os roteadores.
+
+
