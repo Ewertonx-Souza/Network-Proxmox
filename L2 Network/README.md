@@ -194,6 +194,10 @@ Essa rede foi mantida separada do circuito VPLS para evitar misturar o tráfego 
 vmbr1:
 ![vmbr1](../Imagens/L2tunnel/vmbr1.png) 
 
+VM interface:
+
+![vmbr1](../Imagens/L2tunnel/net0.png) 
+
 Mikrotik Virtual:
 
 ![vmbr1](../Imagens/L2tunnel/ether2_dhcp.png) 
