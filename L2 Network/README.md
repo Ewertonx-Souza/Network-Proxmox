@@ -162,9 +162,13 @@ Configuração lógica:
 Parâmetro            Valor
 --------------------------------------
 Nome                 vmbr0
+
 Tipo                 Linux Bridge
+
 Bridge port          nic0
+
 Endereço Proxmox     192.168.88.200/24
+
 Gateway              192.168.88.1
 
 A interface ether1 do MikroTik virtual foi conectada à vmbr0.
