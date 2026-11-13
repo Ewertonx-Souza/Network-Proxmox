@@ -72,4 +72,73 @@ O objetivo final é permitir que um computador físico e uma máquina virtual Li
                   10.10.100.1/24
 
 
-kkk
+
+2.2. Inventário de endereçamento
+
+Equipamento: MikroTik físico
+
+Interface: bridge1
+
+Endereço: 192.168.88.1/24
+
+Finalidade: Transporte
+
+------------------------------------
+
+Equipamento: MikroTik virtual
+
+Interface: ether1
+
+Endereço: 192.168.88.250/24
+
+Finalidade: Transporte
+
+------------------------------------
+
+Equipamento: MikroTik físico
+
+Interface: Loopback
+
+Endereço: 10.255.0.2/32
+
+Finalidade: Router-ID / LDP
+
+------------------------------------
+
+Equipamento: MikroTik virtual
+
+Interface: Loopback
+
+Endereço: 10.255.0.1/32
+
+Finalidade: Router-ID / LDP
+
+------------------------------------
+
+Equipamento: MikroTik físico
+
+Interface: ether4
+
+Endereço: 192.168.5.1/24
+
+Finalidade: Acesso/gerenciamento
+
+------------------------------------
+
+Equipamento: PC Linux
+
+Interface: VLAN 100
+
+Endereço: 10.10.100.2/24
+
+Finalidade: Teste VPLS
+
+------------------------------------
+
+Equipamento: VM Linux
+
+Interface: Nova interface
+
+Endereço: 10.10.100.1/24
+
+Finalidade: Teste VPLS
