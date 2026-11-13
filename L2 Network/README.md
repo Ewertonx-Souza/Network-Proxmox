@@ -160,7 +160,7 @@ Ela está associada à interface física de rede do servidor Proxmox, identifica
 Configuração lógica:
 
 Parâmetro
---------------------------------------
+--------------
 Nome: vmbr0
 
 Tipo: Linux Bridge
