@@ -175,6 +175,10 @@ A interface ether1 do MikroTik virtual foi conectada à vmbr0.
 
 Essa rede transporta o tráfego de controle e os pacotes MPLS entre os roteadores.
 
+vmbr0:
 ![vmbr0](../Imagens/L2tunnel/vmbr0.png) 
+
+Mikrotik virtual:
+
 
 
