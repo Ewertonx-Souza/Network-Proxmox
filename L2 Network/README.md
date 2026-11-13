@@ -179,6 +179,6 @@ vmbr0:
 ![vmbr0](../Imagens/L2tunnel/vmbr0.png) 
 
 Mikrotik virtual:
-
+![vmbr0](../Imagens/L2tunnel/ether1_mkv.png) 
 
 
