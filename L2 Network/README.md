@@ -240,3 +240,6 @@ Foram adicionadas interfaces de rede conectadas a essa bridge:
 -Uma nova interface na VM Linux de testes.
 
 Isso permitiu conectar a máquina Linux diretamente à bridge VPLS do MikroTik virtual, sem interferir na rede DHCP existente.
+
+vmbr2:
+![vmbr2](../Imagens/L2tunnel/vmbr2.png) 
