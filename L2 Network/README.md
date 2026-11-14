@@ -206,4 +206,17 @@ MAC da VM:
 
 ![mac](../Imagens/L2tunnel/dhcp_mac.png) 
 
+3.3. vmbr2 — Rede dedicada ao VPLS
 
+Foi criada uma terceira bridge, chamada vmbr2, para disponibilizar um segmento Ethernet isolado exclusivamente para os testes do VPLS.
+
+Diferentemente da vmbr0, essa bridge não possui interface física associada.
+
+Parâmetro
+-------------
+Nome: vmbr2
+Tipo: Linux Bridge
+Bridge ports: Nenhum
+IPv4/CIDR: Sem endereço
+Gateway: nenhum
+Autostart: Habilitado
