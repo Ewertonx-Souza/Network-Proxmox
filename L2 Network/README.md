@@ -215,8 +215,13 @@ Diferentemente da vmbr0, essa bridge não possui interface física associada.
 Parâmetro
 -------------
 Nome: vmbr2
+
 Tipo: Linux Bridge
+
 Bridge ports: Nenhum
+
 IPv4/CIDR: Sem endereço
+
 Gateway: nenhum
+
 Autostart: Habilitado
