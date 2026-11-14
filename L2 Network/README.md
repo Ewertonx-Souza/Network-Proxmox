@@ -230,3 +230,13 @@ Gateway: nenhum
 
 
 Autostart: Habilitado
+
+A vmbr2 funciona como um switch virtual isolado.
+
+Foram adicionadas interfaces de rede conectadas a essa bridge:
+
+-Uma nova interface na VM do MikroTik virtual.
+
+-Uma nova interface na VM Linux de testes.
+
+Isso permitiu conectar a máquina Linux diretamente à bridge VPLS do MikroTik virtual, sem interferir na rede DHCP existente.
