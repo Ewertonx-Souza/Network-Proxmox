@@ -288,3 +288,12 @@ Interfaces:
 
 ![vmbr2](../Imagens/L2tunnel/interface_mkf.png) 
 
+4.2. Configuração do endereçamento IP
+
+Foi utilizado o endereço 192.168.88.1/24 na bridge1, responsável pela comunicação com o MikroTik virtual.
+
+Também foi criada uma interface loopback com o endereço 10.255.0.2/32.
+
+A loopback fornece um endereço lógico estável para identificação do roteador nos protocolos de roteamento e distribuição de labels.
+
+![address](../Imagens/L2tunnel/address_list.png) 
