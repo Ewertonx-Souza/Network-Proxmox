@@ -243,3 +243,6 @@ Isso permitiu conectar a máquina Linux diretamente à bridge VPLS do MikroTik v
 
 vmbr2:
 ![vmbr2](../Imagens/L2tunnel/vmbr2.png) 
+
+VM:
+![vmbr2](../Imagens/L2tunnel/net1.png) 
