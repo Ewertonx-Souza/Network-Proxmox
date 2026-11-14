@@ -255,7 +255,9 @@ VM do MikroTik
 A VM do MikroTik ficou com três interfaces de rede:
 
 net0 - vmbr0 - transporte MPLS
+
 net1 - vmbr1 - Rede original/DHCP
+
 net2 - vmbr2 - Acesso ao domínio VPLS
 
 Atenção: o nome atribuído pelo RouterOS à interface Ethernet pode variar. Na evidência final do laboratório, a interface aparece como ether4.
