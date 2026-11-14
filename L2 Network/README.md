@@ -246,11 +246,11 @@ vmbr2:
 
 VM:
 
-![vmbr2](../Imagens/L2tunnel/net1.png) 
+![net1](../Imagens/L2tunnel/net1.png) 
 
 Mikrotik Virtual:
 
-![vmbr2](../Imagens/L2tunnel/net2_mkv.png) 
+![net2](../Imagens/L2tunnel/net2_mkv.png) 
 
 3.4. Interfaces de rede das máquinas virtuais
 
@@ -265,3 +265,26 @@ net1 - vmbr1 - Rede original/DHCP
 net2 - vmbr2 - Acesso ao domínio VPLS
 
 Atenção: o nome atribuído pelo RouterOS à interface Ethernet pode variar. Na evidência final do laboratório, a interface aparece como ether4.
+
+VM Linux
+
+Foi adicionada uma segunda interface de rede à VM Linux de testes, conectada à vmbr2.
+
+A interface original foi preservada para não perder a conectividade existente.
+
+ 4. Configuração do MikroTik físico
+
+4.1. Identificação das interfaces
+
+O primeiro passo foi identificar as interfaces disponíveis no MikroTik físico e entender quais estavam sendo utilizadas.
+
+A configuração existente utilizava a bridge1 como parte da rede de transporte.
+
+As interfaces ether2 e ether3 estavam associadas à bridge1.
+
+A ether4 foi preservada para acesso e gerenciamento, sendo posteriormente utilizada para receber a VLAN de teste.
+
+Interfaces:
+
+![vmbr2](../Imagens/L2tunnel/interface_mkf.png) 
+
