@@ -138,7 +138,7 @@ Finalidade: Teste VPLS
 
 Equipamento: VM Linux
 
-Interface: Nova interface
+Interface: ens19
 
 Endereço: 10.10.100.1/24
 
@@ -235,9 +235,9 @@ A vmbr2 funciona como um switch virtual isolado.
 
 Foram adicionadas interfaces de rede conectadas a essa bridge:
 
--Uma nova interface na VM do MikroTik virtual.
+-Uma interface na VM do MikroTik virtual.
 
--Uma nova interface na VM Linux de testes.
+-Uma interface na VM Linux de testes.
 
 Isso permitiu conectar a máquina Linux diretamente à bridge VPLS do MikroTik virtual, sem interferir na rede DHCP existente.
 
@@ -247,6 +247,10 @@ vmbr2:
 VM:
 
 ![vmbr2](../Imagens/L2tunnel/net1.png) 
+
+Mikrotik Virtual:
+
+![vmbr2](../Imagens/L2tunnel/net2_mkv.png) 
 
 3.4. Interfaces de rede das máquinas virtuais
 
